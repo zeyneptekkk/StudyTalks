@@ -1,0 +1,70 @@
+﻿@model BlogApp.Models.PostCreateViewModel
+@using System.Security.Claims
+<form action="Edit" method="post">
+<div class="row">
+    <div class="col-9">
+        <div class="bg-white p-4">
+            <h1>Post Create</h1>
+
+            
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="PostId" />
+
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Url" class="form-label"></label>
+                    <input asp-for="Url" class="form-control" />
+                    <span asp-validation-for="Url" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Content" class="form-label"></label>
+                    <textarea asp-for="Content" class="form-control"></textarea>
+                    <span asp-validation-for="Content" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create</button>
+           
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="bg-white p-4">
+            @foreach (var tag in ViewBag.Tags)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox"name="tagIds" value="@tag.TagId" id="tag_@tag.TagId"
+                      @(Model.Tags.Any(i=>i.TagId==tag.TagId ) ?  "checked":"")/>
+                    <label class="form-check-label" for="tag_@tag.TagId">
+                        @tag.Text
+                    </label>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+</form>
+@section Scripts{
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/8.0.0/tinymce.min.js" integrity="sha512-12CoCMNbCiAvjn0NaAmNaZGh45r1R6LoyEyYbm9JNVNUFuQD/NuvGAV9eynsmEA3MBfnFtwkqqdmjXPK4AqGzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    tinymce.init({
+        selector:'#Content'
+    });
+</script>
+
+}
