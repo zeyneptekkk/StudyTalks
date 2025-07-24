@@ -5,12 +5,14 @@ ASP.NET Core MVC ve Entity Framework Core teknolojileriyle geliştirilmiştir.
 
 
 📝 1. Gönderiler (Postlar)
+
 Uygulamanın ana sayfasında kullanıcılar tarafından oluşturulmuş gönderiler listelenir. Bu gönderiler derslerle ilgili konular içerir.
 
 
 <img width="1894" height="916" alt="image" src="https://github.com/user-attachments/assets/713b020d-2e38-4907-9b24-b0fc4d916c04" />
 
 💬 2. Yorum Yapma ve Yorumları Görme
+
 Her gönderinin altında, kullanıcılar yorum yapabilir. Ayrıca diğer kullanıcıların daha önce yaptığı yorumlar da listelenir. Bu şekilde fikir alışverişi desteklenir. Gönderiyi kimin paylaştığı da görünür
 
 
@@ -18,6 +20,7 @@ Her gönderinin altında, kullanıcılar yorum yapabilir. Ayrıca diğer kullan�
 
 
 🏷️ 3. Tag (Etiket) Sistemi
+
 Her gönderiye, dersin konusuna uygun etiketler (örneğin: "PHP", "Veri Yapıları", "Web Programlama") eklenebilir. Gönderinin üst kısmında bu etiketler gösterilir.
 Etiketlerden birine tıklayan kullanıcı, aynı etikete sahip diğer gönderileri görebilir.
 
@@ -26,6 +29,7 @@ Etiketlerden birine tıklayan kullanıcı, aynı etikete sahip diğer gönderile
 
 
 👤 4. Kullanıcı Kaydı ve Girişi
+
 Ziyaretçiler uygulamaya kayıt olabilir ve giriş yaptıktan sonra yorum yapabilir, gönderi ekleyebilir, gönderilerini düzenleyebilir.
 
 
@@ -35,6 +39,7 @@ Ziyaretçiler uygulamaya kayıt olabilir ve giriş yaptıktan sonra yorum yapabi
 
 
 ✍️ 5. Gönderi Paylaşımı
+
 Giriş yapmış bir kullanıcı:
 
 Başlık, açıklama, içerik girerek,
@@ -51,6 +56,7 @@ kendi gönderisini paylaşabilir.
 
 
 🔍 6. Yorum Geçmişi İnceleme
+
 Bir yorumun yazarının adına tıklayan kullanıcı, o kişinin daha önce yaptığı tüm yorumları görebilir.
 Bu özellik, kullanıcılar arası etkileşimi güçlendirir
 
