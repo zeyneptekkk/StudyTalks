@@ -1,4 +1,5 @@
-BlogApp, kullanıcıların derslerle ilgili gönderiler (postlar) paylaşabildiği, bu gönderilere etiket (tag) ekleyebildiği,
+StudyTalks
+, kullanıcıların derslerle ilgili gönderiler (postlar) paylaşabildiği, bu gönderilere etiket (tag) ekleyebildiği,
 diğer kullanıcılarla yorumlar üzerinden etkileşime girebildiği modern bir eğitim temalı blog uygulamasıdır.
 ASP.NET Core MVC ve Entity Framework Core teknolojileriyle geliştirilmiştir.
 
