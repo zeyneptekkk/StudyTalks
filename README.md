@@ -68,20 +68,17 @@ Bu özellik, kullanıcılar arası etkileşimi güçlendirir
 
 
 🛠️ Kullanılan Teknolojiler
+
 ASP.NET Core MVC: Web uygulamasının temel çatısıdır. Model-View-Controller mimarisi ile kodun düzenli ve yönetilebilir olmasını sağlar.
-
 Entity Framework Core: Veritabanı işlemlerini nesne tabanlı yapmayı kolaylaştıran ORM aracıdır.
-
 SQLite: Hafif, dosya tabanlı veritabanı çözümüdür. Projede hızlı ve kolay kurulum için tercih edilmiştir.
-
 Bootstrap: Responsive ve modern kullanıcı arayüzleri oluşturmak için kullanılan CSS framework’üdür.
-
 TinyMCE: Kullanıcıların gönderi içeriğini zengin biçimde düzenleyebilmeleri için entegre edilen metin editörüdür.
 
 
 🗄️ Veritabanı Yönetimi
-Projede veritabanı işlemleri için Entity Framework Core kullanılmıştır. Veritabanı olarak SQLite tercih edilmiş olup, bu sayede hafif ve kurulumu kolay bir çözüm sağlanmıştır.
 
+Projede veritabanı işlemleri için Entity Framework Core kullanılmıştır. Veritabanı olarak SQLite tercih edilmiş olup, bu sayede hafif ve kurulumu kolay bir çözüm sağlanmıştır.
 Model değişikliklerini takip etmek ve veritabanını güncel tutmak için EF Core Migration sistemi kullanılmıştır. Migration'lar sayesinde tablolar ve alanlar otomatik olarak oluşturulmuş ve güncellenmiştir.
 
 
